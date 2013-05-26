@@ -13,6 +13,9 @@
 		28A440C51750D6DA0016A22F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 28A440C31750D6DA0016A22F /* Credits.rtf */; };
 		28A440C81750D6DB0016A22F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A440C71750D6DB0016A22F /* AppDelegate.m */; };
 		28A440CB1750D6DB0016A22F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28A440C91750D6DB0016A22F /* MainMenu.xib */; };
+		28A440D41750D7080016A22F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A440D21750D7080016A22F /* MainViewController.m */; };
+		28A440D51750D7080016A22F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28A440D31750D7080016A22F /* MainViewController.xib */; };
+		28A440D8175116140016A22F /* NSTextField+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A440D7175116140016A22F /* NSTextField+Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		28A440C61750D6DA0016A22F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28A440C71750D6DB0016A22F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		28A440CA1750D6DB0016A22F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		28A440D11750D7080016A22F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		28A440D21750D7080016A22F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		28A440D31750D7080016A22F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		28A440D6175116140016A22F /* NSTextField+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTextField+Utils.h"; path = "utils/NSTextField+Utils.h"; sourceTree = "<group>"; };
+		28A440D7175116140016A22F /* NSTextField+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTextField+Utils.m"; path = "utils/NSTextField+Utils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +93,11 @@
 				28A440C61750D6DA0016A22F /* AppDelegate.h */,
 				28A440C71750D6DB0016A22F /* AppDelegate.m */,
 				28A440C91750D6DB0016A22F /* MainMenu.xib */,
+				28A440D31750D7080016A22F /* MainViewController.xib */,
+				28A440D11750D7080016A22F /* MainViewController.h */,
+				28A440D21750D7080016A22F /* MainViewController.m */,
 				28A440BB1750D6DA0016A22F /* Supporting Files */,
+				28A440D9175116180016A22F /* Utils */,
 			);
 			path = SimplePasswordEvaluator;
 			sourceTree = "<group>";
@@ -100,6 +112,15 @@
 				28A440C31750D6DA0016A22F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28A440D9175116180016A22F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				28A440D6175116140016A22F /* NSTextField+Utils.h */,
+				28A440D7175116140016A22F /* NSTextField+Utils.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +177,7 @@
 				28A440BF1750D6DA0016A22F /* InfoPlist.strings in Resources */,
 				28A440C51750D6DA0016A22F /* Credits.rtf in Resources */,
 				28A440CB1750D6DB0016A22F /* MainMenu.xib in Resources */,
+				28A440D51750D7080016A22F /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +190,8 @@
 			files = (
 				28A440C11750D6DA0016A22F /* main.m in Sources */,
 				28A440C81750D6DB0016A22F /* AppDelegate.m in Sources */,
+				28A440D41750D7080016A22F /* MainViewController.m in Sources */,
+				28A440D8175116140016A22F /* NSTextField+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +327,7 @@
 				28A440D01750D6DB0016A22F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
